@@ -1,0 +1,41 @@
+{
+  "name": "nodejs_examples",
+  "version": "1.0.0",
+  "description": "nodejs example",
+  "main": "index.js",
+  "author": "namlee",
+  "license": "ISC",
+  "scripts": {
+    "pretest": "yarn linter src",
+    "linter": "./node_modules/.bin/eslint",
+    "start-dev": "node -r dotenv/config ./node_modules/.bin/nodemon --ignore db.json bin/www.js",
+    "start-dev-debug": "nodemon server/server.js --inspect-brk",
+    "test": "node -r dotenv/config ./node_modules/.bin/mocha --exit --recursive"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "global": "^4.3.2",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.4.0",
+    "multer": "^1.4.1",
+    "node-persist": "^3.0.2",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "jshint": "^2.9.7",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9",
+    "prettier": "^1.15.3",
+    "shelljs": "^0.8.3"
+  }
+}

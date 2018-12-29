@@ -1,0 +1,17 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "env": {
+    "es6": true,
+    "mocha": true
+  },
+  "plugins": ["prettier"],
+  "extends": ["airbnb-base", "prettier", "plugin:prettier/recommended"],
+  "rules": {
+    "prettier/prettier": "error",
+    "linebreak-style": "off",
+    "camelcase": "off",
+    "no-console": "off"
+  }
+}
